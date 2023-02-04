@@ -7,29 +7,27 @@ function Banner() {
     <header
       className='banner'
       style={{
-        backgroundImage: <img src='./banner_images/1.jpg'></img>, 
         backgroundPosition: `center center`
       }}>
-      
+      <div className="container">
+        
+        <div className="wrapper">
 
-           
-      
-      
-      {/* <div className='container'>
-                <div className='wrapper'>
-                    
-                        <img src='' className='img'></img>
-                        <img src='https://wallpaperaccess.com/full/11207.jpg' className='img'></img>
-                        <img src='https://wallpaperaccess.com/full/11207.jpg' className='img'></img>
-                        <img src='https://wallpaperaccess.com/full/11207.jpg' className='img'></img>
-                        <img src='https://wallpaperaccess.com/full/11207.jpg' className='img'></img>
-                        <img src='https://wallpaperaccess.com/full/11207.jpg' className='img'></img>
-                     
-                      </div>
-                
-            </div> */}
+          <img src={require('./banner_images/1.jpg')} alt="" className="img" />
+          <img src={require('./banner_images/2.jpg')} alt="" className="img" />
+          <img src={require('./banner_images/3.jpg')} alt="" className="img" />
+          <img src={require('./banner_images/4.jpg')} alt="" className="img" />
+          <img src={require('./banner_images/5.jpg')} alt="" className="img" />
+          <img src={require('./banner_images/6.jpg')} alt="" className="img" />
+          <img src={require('./banner_images/7.jpg')} alt="" className="img" />
+          <img src={require('./banner_images/9.jpg')} alt="" className="img" />
+          <img src={require('./banner_images/8.jpg')} alt="" className="img" />
+        </div>
 
-      <div className="banner-fade-bottom" />
+      </div>
+
+    
+      {/* <div className="banner-fade-bottom" /> - Needs to be overlap */}
     </header>
     
   )
