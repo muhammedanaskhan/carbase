@@ -9,36 +9,42 @@
 .img{
     height: 450px;
     width: 100%;
+    min-width: 100%;
     object-fit: cover;
 }
 
-.slider-frame{
-    overflow: hidden;
+.wrapper{
+    display: flex;
+    width: 100%;
+    animation: slide 16s infinite;
 }
 
 /*--------slider animation----------*/
 
-@-webkit-keyframes slide_animation{
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:12000px;}
-    30% {left:1200px;}
-    40% {left:2400px;}
-    50% {left:2400px;}
-    60% {left:1200px;}
-    70% {left:1200px;}
-    80% {left:0px;}
-    90% {left:0px;}
-    100% {left:0px;}
-}
 
-.slide-images{
-    object-fit: contain;
-    position: relative;
-    animation-name: slide_animation;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 33s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
 }
